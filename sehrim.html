@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şehrim Hatay - Rojda</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Harici CSS dosyamız[cite: 1] -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+
+    <!-- Navigasyon Menüsü -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Benim Projem</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-toggle="target" aria-controls="navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Hakkında</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html">Özgeçmiş</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="sehrim.html">Şehrim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Mirasımız</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">İlgi Alanlarım</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">İletişim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Giriş Yap</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 mb-5 text-center">
+        <h2 class="mb-4 text-primary">Medeniyetler Beşiği: Hatay</h2>
+        <p class="lead">Hatay, tarihi boyunca birçok farklı kültüre ev sahipliği yapmış, eşsiz doğası ve UNESCO tescilli gastronomisiyle Türkiye'nin en özel şehirlerinden biridir.</p>
+
+        <div id="hataySlider" class="carousel slide shadow-lg rounded mt-4" data-bs-ride="carousel">
+            <div class="carousel-inner rounded">
+                <!-- 1. Resim -->
+                <div class="carousel-item active">
+                    <img src="müze.jpg" class="d-block w-100" alt="Antakya Mozaik Müzesi">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                        <h5>Antakya Arkeoloji Müzesi</h5>
+                        <p>Dünyanın en büyük mozaik müzelerinden biri.</p>
+                    </div>
+                </div>
+                <!-- 2. Resim -->
+                <div class="carousel-item">
+                    <img src="tunel.jpeg" class="d-block w-100" alt="Titus Tüneli">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                        <h5>Titus Tüneli</h5>
+                        <p>Roma döneminden kalma muazzam bir mühendislik harikası.</p>
+                    </div>
+                </div>
+                <!-- 3. Resim -->
+                <div class="carousel-item">
+                    <img src="harbiyeselale.webp" class="d-block w-100" alt="Harbiye Şelalesi">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                        <h5>Harbiye Şelalesi</h5>
+                        <p>Mitolojik hikayelere konu olmuş eşsiz doğa harikası.</p>
+                    </div>
+                </div>
+                <!-- 4. Resim -->
+                <div class="carousel-item">
+                    <img src="camii.jpg" class="d-block w-100" alt="Habib-i Neccar Camii">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                        <h5>Habib-i Neccar Camii</h5>
+                        <p>Anadolu'da inşa edilen ilk camilerden biri.</p>
+                    </div>
+                </div>
+
+                <!-- 5. Resim (Samandağ Bisiklet Yolu) -->
+                <div class="carousel-item">
+                    <img src="bisikletyolu.jpg" class="d-block w-100" alt="Samandağ Bisiklet Yolu">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                        <h5>Samandağ Bisiklet Yolu</h5>
+                        <p>Dünyanın en uzun kesintisiz bisiklet yollarından biri olan eşsiz bir rota.</p>
+                    </div>
+                </div>
+            </div>
+           
+            <button class="carousel-control-prev" type="button" data-bs-target="#hataySlider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Önceki</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#hataySlider" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Sonraki</span>
+            </button>
+        </div>
+
+        <div class="row mt-5 text-start bg-white p-4 rounded shadow-sm">
+            <div class="col-md-6">
+                <h4 class="text-secondary">Şehir Hakkında Bilgiler</h4>
+                <p><strong>Nüfus:</strong> Yaklaşık 1.6 milyon.</p>
+                <p><strong>Gezilecek Yerler:</strong> Antakya Arkeoloji Müzesi, Titus Tüneli, Harbiye Şelalesi, St. Pierre Kilisesi, Habib-i Neccar Camii, İskenderun Sahili.</p>
+            </div>
+            <div class="col-md-6 border-start">
+                <h4 class="text-secondary">Kültür ve Gastronomi</h4>
+                <p>Hatay, cami, kilise ve havranın yan yana bulunduğu bir hoşgörü şehridir. Aynı zamanda Künefe, Tepsi Kebabı ve Kağıt Kebabı gibi lezzetleriyle UNESCO Yaratıcı Şehirler Ağı'nda gastronomi alanında yer almaktadır.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alt Bilgi (Footer) -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="mb-0">&copy; 2026 Rojda - Web Teknolojileri Projesi</p>
+    </footer>
+
+    <!-- Bootstrap JS (Slider'ın kayması için bu kütüphane şart!)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
