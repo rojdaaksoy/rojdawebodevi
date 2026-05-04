@@ -21,3 +21,9 @@ body {
 h2, h4, h5 {
     color: #2c3e50;
 }
+
+
+.card-img-top {
+    height: 250px ;
+    object-fit: cover ; 
+}

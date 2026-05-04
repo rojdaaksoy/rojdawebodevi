@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirasımız ve Takımımız - Hatay</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .card-img-top { height: 250px; object-fit: cover; }
+        .section-title { border-bottom: 2px solid #dc3545; display: inline-block; padding-bottom: 5px; margin-bottom: 20px; }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- Navigasyon Menüsü -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Rojda | Web Projesi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="index.html">Hakkında</a>
+                    <a class="nav-link active" href="mirasimiz.html">Mirasımız & Takımımız</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <!-- 1. Bölüm: Kültürel Miras (Titus ve Beşikli Mağara) -->
+        <div class="text-center mb-5">
+            <h2 class="section-title">Kültürel Mirasımız</h2>
+        </div>
+
+        <div class="row g-4 mb-5">
+            <!-- Titus Tüneli -->
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0">
+                    <img src="titustuneli.jpg" class="card-img-top rounded-top" alt="Titus Tüneli" data-bs-toggle="modal" data-bs-target="#titusModal" style="cursor: pointer;">
+                    <div class="card-body">
+                        <h4 class="card-title text-danger">Titus Tüneli</h4>
+                        <p class="card-text">Roma döneminde sel sularını önlemek amacıyla dağın oyulmasıyla yapılan bu tünel, dünyanın elle yapılan en büyük tüneli olarak kabul edilir. Mühendislik harikası olarak görülmektedir.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beşikli Mağara -->
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0">
+                    <img src="besiklimagara.jpg" class="card-img-top rounded-top" alt="Beşikli Mağara" data-bs-toggle="modal" data-bs-target="#besikliModal" style="cursor: pointer;">
+                    <div class="card-body">
+                        <h4 class="card-title text-danger">Beşikli Mağara</h4>
+                        <p class="card-text">Titus Tüneli'nin hemen yakınında bulunan bu kaya mezarları, Roma dönemine aittir. İçerisindeki sütunlar ve mezar odaları tamamen kayalara oyularak inşa edilmiştir.</p>
+                    </div>
+                </div>
+            </div>
+
+        <div class="row g-4 mb-5">
+            <!-- St. Pierre Kilisesi -->
+            <div class="col-md-4">
+                <div class="card shadow-sm border-0">
+                    <img src="kilise.jpg" class="card-img-top rounded-top" alt="St. Pierre Kilisesi" data-bs-toggle="modal" data-bs-target="#stpierreModal" style="cursor: pointer;">
+                    <div class="card-body">
+                        <h4 class="card-title text-danger">St. Pierre Kilisesi</h4>
+                        <p class="card-text">Dünyanın ilk mağara kilisesi olarak kabul edilir. Hristiyanlık isminin dünyada ilk kez burada verildiği bilinmektedir.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Habibi Neccar Camii -->
+            <div class="col-md-4">
+                <div class="card shadow-sm border-0">
+                    <img src="camii.jpg" class="card-img-top rounded-top" alt="Habibi Neccar Camii" data-bs-toggle="modal" data-bs-target="#habibiModal" style="cursor: pointer;">
+                    <div class="card-body">
+                        <h4 class="card-title text-danger">Habibi Neccar Camii</h4>
+                        <p class="card-text">Anadolu'nun ilk camisidir. Roma dönemine ait bir pagan tapınağının üzerine inşa edilmiştir ve şehrin en önemli simgelerindendir.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hatay Arkeoloji Müzesi -->
+            <div class="col-md-4">
+                <div class="card shadow-sm border-0">
+                    <img src="arkeoloji.jpg" class="card-img-top rounded-top" alt="Hatay Arkeoloji Müzesi" data-bs-toggle="modal" data-bs-target="#arkeolojiModal" style="cursor: pointer;">
+                    <div class="card-body">
+                        <h4 class="card-title text-danger">Arkeoloji Müzesi</h4>
+                        <p class="card-text">Dünyanın en büyük mozaik koleksiyonlarından birine ev sahipliği yapar. Hatay'ın binlerce yıllık tarihine ışık tutmaktadır.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+        <!-- 2. Bölüm: Şehrin Takımı (Hatayspor) -->
+        <div class="text-center mb-5">
+            <h2 class="section-title">Şehrimizin Takımı</h2>
+        </div>
+
+        <div class="row align-items-center bg-white p-4 shadow-sm rounded mb-5">
+            <div class="col-md-4 text-center">
+                <img src="hatayspor.jpeg" class="img-fluid p-3" style="max-height: 200px;" alt="Hatayspor Logo">
+            </div>
+            <div class="col-md-8">
+                <h3 class="text-success">Atakaş Hatayspor</h3>
+                <p>1967 yılında kurulan Hatayspor, şehrimizin en önemli spor değeridir. Bordo-Beyaz renkleriyle Süper Lig'de mücadele eden takımımız, zorlu süreçlere rağmen şehrimizin pes etmeyen ruhunu temsil etmektedir.</p>
+                <table class="table table-hover mt-3">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Kuruluş</th>
+                            <th>Renkler</th>
+                            <th>Stadyum</th>
+                            <th>Lakap</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1967</td>
+                            <td>Bordo - Beyaz</td>
+                            <td>Mersin Stadyumu (Geçici)</td>
+                            <td>Güneyin Yıldızı</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Büyütme Pencereleri (Modallar) -->
+<div class="modal fade" id="titusModal" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content"><div class="modal-body p-0"><img src="titustuneli.jpg" class="w-100"></div></div></div></div>
+<div class="modal fade" id="besikliModal" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content"><div class="modal-body p-0"><img src="besiklimagara.jpg" class="w-100"></div></div></div></div>
+<div class="modal fade" id="stpierreModal" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content"><div class="modal-body p-0"><img src="kilise.jpg" class="w-100"></div></div></div></div>
+<div class="modal fade" id="habibiModal" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content"><div class="modal-body p-0"><img src="camii.jpg" class="w-100"></div></div></div></div>
+<div class="modal fade" id="arkeolojiModal" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content"><div class="modal-body p-0"><img src="arkeoloji.jpg" class="w-100"></div></div></div></div>
+
+</body>
+</html>
