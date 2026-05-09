@@ -27,3 +27,20 @@ h2, h4, h5 {
     height: 250px ;
     object-fit: cover ; 
 }
+
+/* İletişim Formu Tasarım Dokunuşları */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    border-radius: 15px; /* Kartın köşelerini yuvarlar */
+    margin-top: 20px;
+}
+
+.text-danger {
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}
