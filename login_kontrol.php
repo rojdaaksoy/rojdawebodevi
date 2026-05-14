@@ -1,33 +1,29 @@
 <?php
-// Verileri al ve boşlukları temizle
+// Formdan gelen verileri alıyoruz
 $email = isset($_POST['email']) ? trim($_POST['email']) : '';
 $sifre = isset($_POST['password']) ? trim($_POST['password']) : '';
 
-// Doğru bilgiler (Senin yeni bilgilerin)
-$dogru_email = "b251210079@sakarya.edu.tr";
-$dogru_sifre = "b251210079";
+// E-posta içindeki numarayı ayıklıyoruz (b251210079@sakarya.edu.tr -> b251210079)
+$parcalar = explode('@', $email);
+$ogrenci_no = $parcalar[0]; 
 
-if ($email == $dogru_email && $sifre == $dogru_sifre) {
-    // Giriş başarılıysa Bootstrap tasarımlı bir karşılama yapalım
-    echo '<!DOCTYPE html>
-    <html lang="tr">
-    <head>
-        <meta charset="UTF-8">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <title>Hoşgeldiniz</title>
-    </head>
-    <body class="bg-light d-flex align-items-center justify-content-center" style="height: 100vh;">
-        <div class="card p-5 shadow-lg text-center" style="max-width: 500px; border-radius: 20px;">
-            <h1 class="text-primary fw-bold mb-3">Hoşgeldiniz</h1>
-            <h3 class="mb-4 text-dark">' . htmlspecialchars($email) . '</h3>
-            <p class="lead text-muted">Giriş işleminiz başarıyla tamamlandı.</p>
-            <hr>
-            <a href="index.html" class="btn btn-primary btn-lg w-100">Ana Sayfaya Git</a>
-        </div>
-    </body>
-    </html>';
+// Ödevde istenen: Gelen tüm verileri ekrana yazdırma
+echo "<div style='text-align:center; font-family:sans-serif; margin-top:50px;'>";
+echo "<h2>Gönderilen Form Verileri</h2>";
+echo "<b>Gelen E-posta:</b> " . htmlspecialchars($email) . "<br>";
+echo "<b>Gelen Şifre:</b> " . htmlspecialchars($sifre) . "<hr>";
+
+// Kontroller: Email uzantısı doğru mu ve şifre öğrenci numarasına eşit mi?
+if (strpos($email, '@sakarya.edu.tr') !== false && $sifre === $ogrenci_no && !empty($sifre)) {
+    // Başarılı Giriş: Hoşgeldiniz [Öğrenci No] mesajı
+    echo "<h1 style='color:green;'>Hoşgeldiniz " . htmlspecialchars($ogrenci_no) . "</h1>";
+    echo "<p><a href='index.html' style='text-decoration:none; color:blue;'>Ana Sayfaya Dön</a></p>";
 } else {
-    // Bilgiler yanlışsa uyarı ver ve geri gönder
-    echo "<script>alert('Hata: Kullanıcı adı veya şifre yanlış!'); window.location.href='login.html';</script>";
+    // Hatalı Giriş: Hata mesajı ve yönlendirme
+    echo "<script>
+            alert('Hata: Bilgiler hatalı veya alanlar boş!'); 
+            window.location.href='login.html';
+          </script>";
 }
+echo "</div>";
 ?>
